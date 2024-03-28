@@ -9,6 +9,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { BlogCardComponent } from './shared/blog-card/blog-card.component';
+import { SearchBoxComponent } from './shared/search-box/search-box.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BlogCardComponent } from './shared/blog-card/blog-card.component';
     BlogComponent,
     HomeComponent,
     PageNotFoundComponent,
-    BlogCardComponent
+    BlogCardComponent,
+    SearchBoxComponent
   ],
   imports: [
     BrowserModule,
