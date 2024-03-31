@@ -1,10 +1,6 @@
 <div class="mb-10">
-  <app-search-box></app-search-box>
+  <app-search-box [search]="text" (actionEvent)="searchBlog($event)"></app-search-box>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div><app-blog-card></app-blog-card></div>
-  <div><app-blog-card></app-blog-card></div>
-  <div><app-blog-card></app-blog-card></div>
-  <div><app-blog-card></app-blog-card></div>
-  <div><app-blog-card></app-blog-card></div>
+  <div *ngFor="let blog of listBlogHome"><app-blog-card [data]="blog"></app-blog-card></div>
 </div>

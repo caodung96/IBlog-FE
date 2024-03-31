@@ -1,0 +1,16 @@
+/* Add this to your styles.css or component.css file */
+::-webkit-scrollbar {
+    @apply w-1;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-green-400 
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-green-600;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-green-500;
+}
