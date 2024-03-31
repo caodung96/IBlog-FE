@@ -7,4 +7,5 @@ export const environment = {
     saveBlog:"Posts/saveBlog",
     categoryGetAll:"Category/GetAll",
     getbloghome:"Posts/getbloghome",
+    getblogbyslug:"Posts/getblogbyslug",
 }
