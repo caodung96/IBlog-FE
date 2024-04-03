@@ -13,7 +13,6 @@ import { SearchBoxComponent } from './shared/search-box/search-box.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 @NgModule({
   declarations: [
@@ -34,7 +33,6 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     AppRoutingModule,
     HttpClientModule,
     CommonModule,
-    CKEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-iblog-project": {
+    "angular-starter": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-iblog-project/browser",
+            "outputPath": "dist/angular-starter/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-iblog-project:build:production"
+              "browserTarget": "angular-starter:build:production"
             },
             "development": {
-              "browserTarget": "my-iblog-project:build:development"
+              "browserTarget": "angular-starter:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-iblog-project:build"
+            "browserTarget": "angular-starter:build"
           }
         },
         "test": {
@@ -101,7 +101,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/my-iblog-project/server",
+            "outputPath": "dist/angular-starter/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
@@ -124,12 +124,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "my-iblog-project:build:development",
-              "serverTarget": "my-iblog-project:server:development"
+              "browserTarget": "angular-starter:build:development",
+              "serverTarget": "angular-starter:server:development"
             },
             "production": {
-              "browserTarget": "my-iblog-project:build:production",
-              "serverTarget": "my-iblog-project:server:production"
+              "browserTarget": "angular-starter:build:production",
+              "serverTarget": "angular-starter:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -143,12 +143,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-iblog-project:build:production",
-              "serverTarget": "my-iblog-project:server:production"
+              "browserTarget": "angular-starter:build:production",
+              "serverTarget": "angular-starter:server:production"
             },
             "development": {
-              "browserTarget": "my-iblog-project:build:development",
-              "serverTarget": "my-iblog-project:server:development"
+              "browserTarget": "angular-starter:build:development",
+              "serverTarget": "angular-starter:server:development"
             }
           },
           "defaultConfiguration": "production"
@@ -157,6 +157,6 @@
     }
   },
   "cli": {
-    "analytics": "a5b9fb4d-ae41-4fb8-9430-ac6bd0543d80"
+    "analytics": "bec3cc3c-68d0-4c92-bb29-7f74080768a3"
   }
 }

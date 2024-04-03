@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { Post } from 'src/app/core/model/post.mode';
 import { BlogService } from 'src/app/core/services/blog.service';
 
@@ -15,7 +14,6 @@ export class BlogComponent {
     this.meta.addTag({ name: 'description', content: 'Your description here' });
     this.title.setTitle('Your title here');
   }
-  public Editor = ClassicEditor;
   data:Post=new Post();
   slug: string='';
   ngOnInit(): void {
