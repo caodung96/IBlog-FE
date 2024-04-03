@@ -9,17 +9,17 @@ import { environment } from 'src/environments/environments';
 export class HomeService {
 
   constructor(protected http: HttpClient) {}
-  getbloghome(text:string,slug:string){
-    let url=`${environment.apiUrl}/${environment.getbloghome}`;
+  getbloghome(pageNum:number,text:string,slug:string){
+    let url=`${environment.apiUrl}/${environment.getbloghome}?pageNum=${pageNum}`;
     if(slug!=''){
-      url=`${environment.apiUrl}/${environment.getbloghome}?slug=${slug}`;
+      url=`${url}&slug=${slug}`;
     }
     if(text!=''){
       if(slug!=''){
-        url=`${environment.apiUrl}/${environment.getbloghome}?slug=${slug}&text=${text}`;
+        url=`${url}&text=${text}`;
       }
       else{
-        url=`${environment.apiUrl}/${environment.getbloghome}?text=${text}`;
+        url=`${url}&text=${text}`;
       }
     }
     return this.http.get<any>(url).pipe();

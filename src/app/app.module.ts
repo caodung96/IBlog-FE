@@ -13,6 +13,7 @@ import { SearchBoxComponent } from './shared/search-box/search-box.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { PaginationComponent } from './shared/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CommonModule } from '@angular/common';
     HomeComponent,
     PageNotFoundComponent,
     BlogCardComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

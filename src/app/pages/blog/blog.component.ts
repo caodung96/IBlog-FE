@@ -12,13 +12,13 @@ import { BlogService } from 'src/app/core/services/blog.service';
 export class BlogComponent {
   constructor(private route: ActivatedRoute,private meta: Meta,private title: Title,private service: BlogService) {
     this.meta.addTag({ name: 'description', content: 'Your description here' });
-    this.title.setTitle('Your title here');
   }
   data:Post=new Post();
   slug: string='';
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.slug=params.get('slug') || '';
+      this.title.setTitle(`New Tool share - ${this.slug}`);
       this.getblogbyslug();
       // this.getbloghome();
     });
@@ -28,5 +28,8 @@ export class BlogComponent {
       // this.listBlogHome = data.data;
       this.data = data.data;
     });
+  }
+  refLink(link:string){
+    window.location.href = link;
   }
 }
