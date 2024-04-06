@@ -14,6 +14,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { PaginationComponent } from './shared/pagination/pagination.component';
+import { ScrollTopComponent } from './shared/scroll-top/scroll-top.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { TermsServiceComponent } from './pages/terms-service/terms-service.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { PaginationComponent } from './shared/pagination/pagination.component';
     PageNotFoundComponent,
     BlogCardComponent,
     SearchBoxComponent,
-    PaginationComponent
+    PaginationComponent,
+    ScrollTopComponent,
+    AboutUsComponent,
+    PrivacyPolicyComponent,
+    TermsServiceComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,

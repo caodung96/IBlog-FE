@@ -14,6 +14,7 @@
     listCategories:any
     listTags:any
     slug:string
+created_At: Date;
   
     constructor() {
       this.id = 0;
@@ -27,5 +28,6 @@
       this.tag = [];
       this.linkRef = '';
       this.slug = '';
+      this.created_At=new Date()
     }
   }
