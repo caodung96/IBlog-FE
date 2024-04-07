@@ -2,7 +2,7 @@
   <app-search-box [search]="text" (actionEvent)="searchBlog($event)"></app-search-box>
 </div>
 <div *ngIf="slug==''" class="text-center mb-6 text-3xl font-bold">
-  <h1>THE BEST OF AI TOOLS</h1> 
+  <h1>THE BEST OF TOOLS</h1> 
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
   <div *ngFor="let blog of listBlogHome"><app-blog-card [data]="blog"></app-blog-card></div>
