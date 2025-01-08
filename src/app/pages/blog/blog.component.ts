@@ -37,6 +37,9 @@ export class BlogComponent {
     this.service.getblogbyslug(this.slug).subscribe(data => {
       // this.listBlogHome = data.data;
       this.data = data.data;
+      if(data.data.linkRef!=""&&data.data.linkRef!=null){
+        this.refLink(data.data.linkRef);
+      }
     });
   }
   refLink(link:string){
